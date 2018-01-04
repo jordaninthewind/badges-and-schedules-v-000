@@ -17,6 +17,7 @@ end
 def printer(array)
   badge = batch_badge_creator(array)
   rooms = assign_rooms(array)
+  p rooms
   return_array = []
   badge.each_with_index {|el, i| return_array << el << rooms[i] }
   return_array
