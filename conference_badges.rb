@@ -15,10 +15,12 @@ def assign_rooms(array)
 end
 
 def printer(array)
+  return_array = []
+
   badge = batch_badge_creator(array)
   rooms = assign_rooms(array)
-  rooms
-  return_array = []
+
   badge.each_with_index {|el, i| return_array << el << rooms[i] }
+
   return_array.each {|el| puts el}
 end
