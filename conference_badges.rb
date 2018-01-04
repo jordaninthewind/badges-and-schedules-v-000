@@ -20,5 +20,5 @@ def printer(array)
   rooms
   return_array = []
   badge.each_with_index {|el, i| return_array << el << rooms[i] }
-  p return_array
+  return_array.each {|el| puts el}
 end
