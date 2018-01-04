@@ -9,7 +9,9 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms(array)
-  array.each_with_index {|el, i| p "Hello, #{el}! You'll be assigned to room #{i + 1}!" }
+  return_array = []
+  array.each_with_index {|el, i| return_array << "Hello, #{el}! You'll be assigned to room #{i + 1}!" }
+  return_array
 end
 
 def printer
