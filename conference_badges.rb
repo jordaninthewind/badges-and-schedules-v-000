@@ -1,9 +1,11 @@
 def badge_maker(name)
-  p "Hello, my name is #{name}."
+  return "Hello, my name is #{name}."
 end
 
 def batch_badge_creator(attendees)
-  attendees.each {|el| p "Hello, my name is #{el}."}
+  return_array = []
+  attendees.each {|el| return_array << badge_maker(el)}
+  return_array
 end
 
 def assign_rooms
