@@ -3,7 +3,7 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-  attendees.each {|el| badge_maker(el)}
+  attendees.each {|el| p el}
 end
 
 def assign_rooms
