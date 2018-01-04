@@ -1,5 +1,5 @@
-def badge_maker(array)
-  array.each {|el| p "Hello, my name is #{name}."}
+def badge_maker(name)
+  p "Hello, my name is #{name}."
 end
 
 def batch_badge_creator
